@@ -2,7 +2,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
-    background: #1a1a1a;
+    background: linear-gradient(90deg, #1e1e2f, #111118);
     color: #e3e3e3;
 }
 
@@ -34,28 +34,29 @@ header nav a:hover {
 #hero {
     text-align: center;
     padding: 100px 20px;
-    background: url('https://source.unsplash.com/1600x900/?city,neon') no-repeat center center/cover;
+    background: url('https://source.unsplash.com/1600x900/?cyberpunk,city') no-repeat center center/cover;
     color: white;
 }
 
 #hero h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     text-shadow: 2px 2px #000;
 }
 
 #hero button {
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 15px 30px;
+    font-size: 1.2em;
     color: #fff;
     background: #e63946;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: transform 0.2s, background 0.3s;
 }
 
 #hero button:hover {
     background: #d02635;
+    transform: scale(1.1);
 }
 
 section {
@@ -64,13 +65,19 @@ section {
 }
 
 section h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #e63946;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #0f0f0f;
-    color: #e3e3e3;
+    color: white;
 }
