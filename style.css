@@ -1,82 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
-    color: #333;
+    background: #1a1a1a;
+    color: #e3e3e3;
 }
 
 header {
-    background: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #0f0f0f;
+    border-bottom: 3px solid #e63946;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+header .logo {
+    font-size: 1.5em;
+    color: #e63946;
 }
 
-nav {
-    background: #34495e;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
+header nav a {
     margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    color: #e3e3e3;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+header nav a:hover {
+    color: #e63946;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?city,neon') no-repeat center center/cover;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px #000;
+}
+
+#hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#hero button:hover {
+    background: #d02635;
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 50px 20px;
+    text-align: center;
 }
 
 section h2 {
-    color: #2c3e50;
-}
-
-.download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background: #e74c3c;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.download-button:hover {
-    background: #c0392b;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #2c3e50;
-    color: #fff;
-    margin-top: 20px;
+    padding: 10px;
+    background: #0f0f0f;
+    color: #e3e3e3;
 }
